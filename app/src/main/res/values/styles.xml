@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_of_menu_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/YP_Black</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">@color/YP_Black</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:fontFamily">@font/yandex_sans_display_bold</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="text_of_settings_item_screen">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/YP_Black</item>
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+</resources>
