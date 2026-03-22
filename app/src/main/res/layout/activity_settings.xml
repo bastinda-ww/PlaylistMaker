@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start|center_vertical"
             android:layout_margin="4dp"
+            android:id="@+id/back_button"
             android:src="@drawable/ic_arrow_back_24x24" />
 
         <TextView
