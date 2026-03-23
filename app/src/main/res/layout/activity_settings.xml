@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/YP_White"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="4dp"
+            android:id="@+id/back_button"
+            android:src="@drawable/ic_arrow_back_24x24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/YP_Black"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_list_item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_of_settings_item_screen"
+            android:text="@string/theme" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            app:thumbTintMode="src_atop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_list_item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_of_settings_item_screen"
+            android:text="@string/share" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_share_24x24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_list_item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_of_settings_item_screen"
+            android:text="@string/support" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_support_24x24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_list_item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_of_settings_item_screen"
+            android:text="@string/user_agreement" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_forward_24x24" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="primary_text_size">16sp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="padding_menu_items_horizontal">16dp</dimen>
+    <dimen name="settings_list_item_layout_height">61dp</dimen>
+</resources>
