@@ -54,4 +54,8 @@
     <style name="icon_color">
         <item name="tint">@color/YP_White</item>
     </style>
+
+    <style name="search_bar_icons">
+        <item name="tint">@color/YP_Black</item>
+    </style>
 </resources>
