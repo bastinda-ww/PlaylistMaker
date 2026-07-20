@@ -1,6 +1,5 @@
 package com.practicum.playlistmaker
 
-import android.content.Context
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -11,12 +10,21 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class SearchActivity : AppCompatActivity() {
+
+    companion object {
+        const val searchText = "SEARCH_TEXT"
+
+        private var searchQuery = ""
+    }
+
+    private lateinit var searchField: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
         val backButton = findViewById<ImageView>(R.id.back_button)
-        val searchField = findViewById<EditText>(R.id.search_field)
+        searchField = findViewById<EditText>(R.id.search_field)
         val clearSearchButton = findViewById<ImageView>(R.id.clear_button)
         clearSearchButton.visibility = View.GONE
 
@@ -35,6 +43,7 @@ class SearchActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 clearSearchButton.visibility = clearButtonVisibility(s)
+                searchQuery = s?.toString() ?: ""
             }
 
         }
@@ -42,10 +51,31 @@ class SearchActivity : AppCompatActivity() {
 
         clearSearchButton.setOnClickListener {
             searchField.text.clear()
-            val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+            val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as? InputMethodManager
             inputMethodManager?.hideSoftInputFromWindow(searchField.windowToken, 0)
         }
 
+        savedInstanceState?.let {
+            restoreEditTextState(it)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(searchText, searchQuery)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        restoreEditTextState(savedInstanceState)
+    }
+
+    private fun restoreEditTextState(savedInstanceState: Bundle) {
+        searchQuery = savedInstanceState.getString(searchText, "")
+        if (!searchQuery.isEmpty()) {
+            searchField.setText(searchQuery)
+            searchField.setSelection(searchQuery.length)
+        }
     }
 
     private fun clearButtonVisibility(s: CharSequence?): Int {
