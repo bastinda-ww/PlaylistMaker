@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/background_color_of_other_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/YP_White"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -19,16 +19,12 @@
             android:layout_gravity="start|center_vertical"
             android:layout_margin="4dp"
             android:id="@+id/back_button"
-            android:src="@drawable/ic_arrow_back_24x24" />
+            android:src="@drawable/ic_arrow_back_24x24"
+            style="@style/back_button"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/settings"
-            android:layout_marginLeft="20dp"
-            android:textColor="@color/YP_Black"
-            android:textSize="@dimen/header_text_size"
-            android:textStyle="bold" />
+            style="@style/header_text"/>
     </LinearLayout>
 
     <LinearLayout
@@ -37,8 +33,9 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/text_of_settings_item_screen"
-            android:text="@string/theme" />
+            style="@style/text_of_item_settings_screen"
+            android:text="@string/theme"
+            android:id="@+id/dark_mode_button" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="56dp"
@@ -54,14 +51,16 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/text_of_settings_item_screen"
-            android:text="@string/share" />
+            style="@style/text_of_item_settings_screen"
+            android:text="@string/share"
+            android:id="@+id/share_button"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|center_vertical"
-            android:src="@drawable/ic_share_24x24" />
+            android:src="@drawable/ic_share_24x24"
+            style="@style/icon_color"/>
 
     </LinearLayout>
 
@@ -71,14 +70,16 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/text_of_settings_item_screen"
-            android:text="@string/support" />
+            style="@style/text_of_item_settings_screen"
+            android:text="@string/support"
+            android:id="@+id/support_button"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_support_24x24" />
+            android:src="@drawable/ic_support_24x24"
+            style="@style/icon_color"/>
 
     </LinearLayout>
 
@@ -88,14 +89,16 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/text_of_settings_item_screen"
-            android:text="@string/user_agreement" />
+            style="@style/text_of_item_settings_screen"
+            android:text="@string/user_agreement"
+            android:id="@+id/terms_of_use_button"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_forward_24x24" />
+            android:src="@drawable/ic_forward_24x24"
+            style="@style/icon_color"/>
 
     </LinearLayout>
 

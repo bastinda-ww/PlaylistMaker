@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="background_color_of_main_activity">
-        <item name="android:background">@color/YP_Blue</item>
+        <item name="android:background">@color/YP_Black</item>
     </style>
 
     <style name="background_color_of_other_activity">
-        <item name="android:background">@color/YP_White</item>
+        <item name="android:background">@color/YP_Black</item>
     </style>
 
     <style name="text_of_menu_item" parent="Widget.MaterialComponents.Button.UnelevatedButton">
@@ -30,7 +30,7 @@
         <item name="android:paddingTop">20dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textColor">@color/YP_Black</item>
+        <item name="android:textColor">@color/YP_White</item>
         <item name="android:textSize">@dimen/primary_text_size</item>
         <item name="android:letterSpacing">0</item>
         <item name="android:layout_gravity">center_vertical</item>
@@ -42,20 +42,20 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">2dp</item>
         <item name="android:layout_marginLeft">18dp</item>
-        <item name="android:textColor">@color/YP_Black</item>
+        <item name="android:textColor">@color/YP_White</item>
         <item name="android:textSize">@dimen/header_text_size</item>
         <item name="android:fontFamily">@font/ys_display_medium</item>
     </style>
 
     <style name="back_button">
-        <item name="tint">@color/YP_Black</item>
+        <item name="tint">@color/YP_White</item>
     </style>
 
     <style name="icon_color">
-        <item name="tint">@color/YP_Text_Gray</item>
+        <item name="tint">@color/YP_White</item>
     </style>
 
     <style name="search_bar_icons">
-        <item name="color">@color/YP_Text_Gray</item>
+        <item name="tint">@color/YP_Black</item>
     </style>
 </resources>
