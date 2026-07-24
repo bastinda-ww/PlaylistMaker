@@ -56,7 +56,7 @@
             android:background="@null"
             android:maxLines="1"
             android:hint="@string/search"
-            android:textColorHint="@color/YP_Text_Gray"
+            android:textColorHint="@color/search_icons"
             android:inputType="text"
             android:id="@+id/search_field"/>
 

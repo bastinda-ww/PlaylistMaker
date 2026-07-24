@@ -8,15 +8,9 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doOnTextChanged
 
 class SearchActivity : AppCompatActivity() {
-
-    companion object {
-        const val searchText = "SEARCH_TEXT"
-
-        private var searchQuery = ""
-    }
-
     private lateinit var searchField: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +26,12 @@ class SearchActivity : AppCompatActivity() {
             finish()
         }
 
-        val textWatcher = object : TextWatcher{
+        searchField.doOnTextChanged{text, start, before, count ->
+            clearSearchButton.visibility = clearButtonVisibility(text)
+            searchQuery = text?.toString() ?: ""
+        }
+
+/*        val textWatcher = object : TextWatcher{
             override fun afterTextChanged(s: Editable?) {
 
             }
@@ -46,8 +45,8 @@ class SearchActivity : AppCompatActivity() {
                 searchQuery = s?.toString() ?: ""
             }
 
-        }
-        searchField.addTextChangedListener(textWatcher)
+        }*/
+//        searchField.addTextChangedListener(textWatcher)
 
         clearSearchButton.setOnClickListener {
             searchField.text.clear()
@@ -85,4 +84,11 @@ class SearchActivity : AppCompatActivity() {
             View.VISIBLE
         }
     }
+
+    companion object {
+        const val searchText = "SEARCH_TEXT"
+
+        private var searchQuery = ""
+    }
+
 }
