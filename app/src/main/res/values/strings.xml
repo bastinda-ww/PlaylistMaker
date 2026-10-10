@@ -15,4 +15,6 @@
     <string name="terms_of_use">https://yandex.ru/legal/practicum_offer/ru/</string>
 
     <string name="share_app">https://practicum.yandex.ru/android-developer</string>
+
+    <string name="track_subtitle">%1$s • %2$s</string>
 </resources>

@@ -38,13 +38,13 @@
         app:layout_constraintEnd_toStartOf="@id/goToTheTrackButton"
         app:layout_constraintStart_toEndOf="@id/albumArt"
         app:layout_constraintTop_toTopOf="@id/albumArt"
-        app:layout_constraintBottom_toTopOf="@id/trackSubtitle"
+        app:layout_constraintBottom_toTopOf="@id/artistName"
         app:layout_constraintVertical_chainStyle="packed"
         tools:text="Yesterday (Remastered 2009)"
         style="@style/trackTitle"/>
 
     <TextView
-        android:id="@+id/trackSubtitle"
+        android:id="@+id/artistName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
