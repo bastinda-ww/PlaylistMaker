@@ -58,4 +58,16 @@
     <style name="search_bar_icons">
         <item name="color">@color/YP_Text_Gray</item>
     </style>
+
+    <style name="trackTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+    </style>
+
+    <style name="trackSubTitle">
+        <item name="android:textColor">@color/YP_Text_Gray</item>
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+    </style>
 </resources>
