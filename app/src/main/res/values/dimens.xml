@@ -5,4 +5,5 @@
     <dimen name="padding_menu_items_horizontal">16dp</dimen>
     <dimen name="settings_list_item_layout_height">61dp</dimen>
     <dimen name="radius_8">8dp</dimen>
+    <dimen name="sub_title_text_size">11dp</dimen>
 </resources>
