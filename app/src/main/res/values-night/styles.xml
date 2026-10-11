@@ -62,12 +62,12 @@
     <style name="trackTitle">
         <item name="android:textColor">@color/YP_White</item>
         <item name="android:textSize">@dimen/primary_text_size</item>
-        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
     </style>
 
     <style name="trackSubTitle">
         <item name="android:textColor">@color/YP_White</item>
         <item name="android:textSize">@dimen/sub_title_text_size</item>
-        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
     </style>
 </resources>

@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlin.random.Random
 
 class SearchActivity : AppCompatActivity() {
     private lateinit var searchField: EditText
